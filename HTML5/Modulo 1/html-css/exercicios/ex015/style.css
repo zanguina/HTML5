@@ -1,0 +1,22 @@
+@charset "UTF-8";
+        body {
+            font-family: sans-serif;
+            background-color: darkgray;
+            color: black;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        h2 {
+            color: darkred;
+            font-style: italic;
+        }
+
+        p {
+            text-align: justify;
+        }

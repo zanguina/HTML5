@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        
+        tbody > tr > th {
+            text-align: left;
+            font-weight: normal;
+            position: sticky;
+            top: 0;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > th {
+            font-weight: bolder;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATOMIA DAS TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das cinco maiores cidades de Minas Gerais</caption>
+        <thead>
+            <tr>
+                <th scope="col">Município</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Belo Horizonte</th>
+                <td class="num">2.315.560</td>
+            </tr>
+            <tr>
+                <th>Uberlândia</th>
+                <td class="num">713.224</td>
+            </tr>
+            <tr>
+                <th>Contagem</th>
+                <td class="num">621.863</td>
+            </tr>
+            <tr>
+                <th>Juiz de Fora </th>
+                <td class="num">540.756</td>
+            </tr>
+            <tr>
+                <th>Montes Claros</th>
+                <td class="num">414.240</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">4.821.353</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
